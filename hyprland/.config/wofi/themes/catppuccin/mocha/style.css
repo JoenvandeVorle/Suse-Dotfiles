@@ -52,7 +52,7 @@
 @define-color	crust-rgb  rgb(17, 17, 27);
 
 * {
-  font-family: "JetBrainsMono Nerd Font", "NotoSansMono Nerd Font", "Font Awesome 6 Brands", "JetBrains Mono", "Fira Code", "Inconsolata", "Noto Sans", monospace;
+  font-family: "JetBrainsMono Nerd Font", "NotoSansMono Nerd Font", "JetBrains Mono", "Fira Code", "Inconsolata", "Noto Sans", monospace, "CaskaydiaMono Nerd Font";
   font-size: 100%;
 }
 
@@ -63,17 +63,18 @@ window {
   border: 0.16em solid @lavender;
   border-radius: 0.1em;
   background-color: @base;
-  animation: slideIn 0.5s ease-in-out both;
+  /* opacity: 0.9; */
+  /* animation: slideIn 0.5s ease-in-out both; */
 }
 
 /* Slide In */
 @keyframes slideIn {
   0% {
-     opacity: 0;
+     opacity: 0.3;
   }
 
   100% {
-     opacity: 1;
+     opacity: 0.9;
   }
 }
 
