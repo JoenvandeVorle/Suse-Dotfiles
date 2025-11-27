@@ -2,14 +2,6 @@
 ### LOOK AND FEEL ###
 #####################
 
-# Refer to https://wiki.hypr.land/Configuring/Variables/
-
-$wofiConfig = ~/.config/wofi/config
-$wofiStyle = ~/.config/wofi/themes/catppuccin/mocha/style.css
-
-$waybarConfig = ~/.config/waybar/minimal/config
-$waybarStyle = ~/.config/waybar/minimal/style.css
-
 # https://wiki.hypr.land/Configuring/Variables/#general
 general {
     gaps_in = 5

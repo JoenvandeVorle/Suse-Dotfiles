@@ -1,75 +1,39 @@
 @import "./themes/mocha.css";
 
 * {
-  font-family: "JetBrainsMono Nerd Font", "NotoSansMono Nerd Font", "Font Awesome 6 Brands", "JetBrains Mono", "Fira Code", "Inconsolata", "Noto Sans", monospace;
-  font-weight: bold;
+  border: none;
+  border-radius: 0;
   min-height: 0;
-  /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+  font-family: "NotoSansMono Nerd Font", "CaskaydiaMono Nerd Font";
   font-size: 100%;
   font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
 }
 
-#waybar {
+window#waybar {
   background: transparent;
   color: @text;
-  margin: 5px 5px;
 }
 
-#custom-player,
-#custom-launcher,
-#custom-browser,
-#custom-terminal,
-#custom-files,
-#bluetooth,
-#cpu,
-#memory,
-#custom-music,
-#tray,
-#backlight,
-#clock,
-#battery,
-#pulseaudio,
-#language,
-#custom-lock,
-#custom-power {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0px;
+/* .modules-left {
+  margin-left: 8px;
 }
 
-#workspaces {
-  border-radius: 1rem;
-  margin: 5px;
-  background-color: @surface0;
-  margin-left: 1rem;
+.modules-right {
+  margin-right: 4px
+} */
+
+.modules-center {
+  background: @surface0;
+  border-radius: 9px;
+  padding: 0px 2px;
+  margin: 0px 8px;
 }
 
-#workspaces button {
-  color: @lavender;
-  border-radius: 1rem;
-  padding: 0.5rem;
-}
-
-#workspaces button.active {
-  color: @sky;
-  border-radius: 1rem;
-}
-
-#workspaces button:hover {
-  color: @sapphire;
-  border-radius: 1rem;
-}
-
-#cpu {
-  margin-left: 1rem;
-  border-radius: 1rem 0px 0px 1rem;
-  color: @rosewater;
-}
-
-#memory {
-  margin-right: 1rem;
-  border-radius: 0px 1rem 1rem 0px;
-  color: @rosewater;
+#topleft {
+  background: @surface0;
+  border-radius: 9px;
+  padding: 0px 0px;
+  margin: 0px 8px;
 }
 
 #custom-launcher {
@@ -77,57 +41,78 @@
   color: @rosewater;
 }
 
-#custom-player {
-  border-radius: 0px 1rem 1rem 0px;
-  color: @rosewater;
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
 }
 
-#custom-music {
-  color: @mauve;
-  border-radius: 1rem;
+#workspaces button.empty {
+  opacity: 0.5;
 }
 
-#pulseaudio {
-  color: @mauve;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
-}
-
-#backlight {
-  color: @yellow;
-}
-
-#battery {
-  color: @green;
-}
-
-#battery.charging {
-  color: @green;
-}
-
-#battery.warning:not(.charging) {
-  color: @red;
+#workspaces,
+#taskbar{
+  background: @surface0;
+  border-radius: 9px;
+  padding: 0px 0px;
+  margin-right: 8px;
 }
 
 #clock {
-  color: @text;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
+  margin: 0px 4px;
+}
+
+#custom-launcher,
+#custom-files,
+#backlight,
+#battery,
+#window,
+#pulseaudio,
+#bluetooth,
+#custom-lock,
+#custom-power {
+  background-color: @surface0;
+  min-width: 8px;
+  margin: 0 8px;
+}
+
+#settings {
+  background: @surface0;
+  border-radius: 9px;
+  padding: 0px 5px;
+  margin-right: 8px;
 }
 
 #tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
+  background: @text;
+  border-radius: 9px;
+  padding: 0px 5px;
+  margin: 0px 8px;
 }
 
-#bluetooth {
-  border-radius: 1rem;
-  color: @blue;
+#hardware {
+  background-color: @surface0;
+  border-radius: 9px;
+  padding: 0px 0px;
 }
 
-#language {
-  border-radius: 1rem 0px 0px 1rem;
-  color: @maroon;
+#cpu,
+#memory,
+#temperature {
+  margin: 0 8px;
+}
+
+tooltip {
+  padding: 2px;
+  /* background: @background; */
+  /* opacity: 0.95; */
+  border-radius: 9px;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 #custom-lock {
@@ -135,7 +120,6 @@
 }
 
 #custom-power {
-  margin-right: 1rem;
   border-radius: 0px 1rem 1rem 0px;
   color: @red;
 }
