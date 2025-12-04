@@ -12,14 +12,11 @@
     "wlr/taskbar",
     "mpris"
   ],
-  // "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window"],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    // "mpris",
     "group/hardware",
-    // "group/tray-expander",
     "tray",
     "group/settings"
   ],
@@ -145,8 +142,7 @@
   },
   "memory": {
     "interval": 30,
-    // "format": " {}%",
-    "format": "󰾆 {}%",
+    "format": " {}%",
     "on-click": "$TERMINAL -e btop"
   },
  "temperature": {
