@@ -41,7 +41,11 @@ window#waybar {
 
 #custom-launcher {
   border-radius: 1rem 0px 0px 1rem;
-  color: @rosewater;
+  color: @pink;
+}
+
+#custom-files {
+  color: @lavender;
 }
 
 #workspaces button {
@@ -49,6 +53,7 @@ window#waybar {
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
+  color: @text
 }
 
 #workspaces button.empty {
@@ -118,8 +123,24 @@ tooltip {
   opacity: 0;
 }
 
+#bluetooth{
+  color: @blue;
+}
+
+#pulseaudio{
+  color: @green;
+}
+
+#backlight{
+  color: @yellow;
+}
+
+#battery {
+  color: @maroon;
+}
+
 #custom-lock {
-  color: @lavender;
+  color: @text;
 }
 
 #custom-power {
