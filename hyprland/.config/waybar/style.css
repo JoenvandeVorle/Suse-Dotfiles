@@ -1,5 +1,7 @@
 @import "./themes/mocha.css";
 
+@define-color background @base;
+
 * {
   border: none;
   border-radius: 0;
@@ -24,14 +26,14 @@ window#waybar {
 } */
 
 .modules-center {
-  background: @surface0;
+  background: @background;
   border-radius: 9px;
   padding: 0px 2px;
   margin: 0px 8px;
 }
 
 #topleft {
-  background: @surface0;
+  background: @background;
   border-radius: 9px;
   padding: 0px 0px;
   margin: 0px 8px;
@@ -55,7 +57,7 @@ window#waybar {
 
 #workspaces,
 #taskbar{
-  background: @surface0;
+  background: @background;
   border-radius: 9px;
   padding: 0px 0px;
   margin-right: 8px;
@@ -74,13 +76,13 @@ window#waybar {
 #bluetooth,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
+  background-color: @background;
   min-width: 8px;
   margin: 0 8px;
 }
 
 #settings {
-  background: @surface0;
+  background: @background;
   border-radius: 9px;
   padding: 0px 5px;
   margin-right: 8px;
@@ -94,7 +96,7 @@ window#waybar {
 }
 
 #hardware {
-  background-color: @surface0;
+  background-color: @background;
   border-radius: 9px;
   margin-right: 8px;
 }
@@ -107,7 +109,7 @@ window#waybar {
 
 tooltip {
   padding: 2px;
-  /* background: @background; */
+  background: @background;
   /* opacity: 0.95; */
   border-radius: 9px;
 }
