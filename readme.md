@@ -10,7 +10,7 @@ stow hyprland -t ~/
 This will create directories `~/.config/hypr/...` etc. and fill it with symlinks leading to the files in the repo.
 
 ## Screenshots
-Copy the grimblast script under `/scripts` to your `/bin` folder for the screenshotting to work. See [source repo](https://github.com/hyprwm/contrib/tree/main/grimblast) for up to date version.
+Copy the grimblast script under `/hypr/scripts` to your `/bin` folder for the screenshotting to work. See [source repo](https://github.com/hyprwm/contrib/tree/main/grimblast) for up to date version.
 
 ## Credits
 Thanks to christian80gabi for nice [basic setup](https://github.com/christian80gabi/hyprland-opensuse-dotfiles-v2?tab=readme-ov-file)
