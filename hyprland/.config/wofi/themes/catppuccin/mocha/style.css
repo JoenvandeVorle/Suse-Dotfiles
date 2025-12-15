@@ -45,7 +45,7 @@
 @define-color	surface0  #313244;
 @define-color	surface0-rgb  rgb(49, 50, 68);
 @define-color	base  #1e1e2e;
-@define-color	base-rgb  rgb(30, 30, 46);
+@define-color	base-rgb  rgba(30, 30, 46,.99);
 @define-color	mantle  #181825;
 @define-color	mantle-rgb  rgb(24, 24, 37);
 @define-color	crust  #11111b;
@@ -59,10 +59,12 @@
 /* Window */
 window {
   margin: 0px;
-  padding: 10px;
+  padding: 0px;
   border: 0.16em solid @lavender;
-  border-radius: 0.1em;
-  background-color: @base;
+  /* border-radius: 0.1em; */
+  border-radius: 9px;
+  /* Use rgb to prevent wofi bug with showing wallpaper in rounded corners: https://github.com/hyprwm/Hyprland/discussions/11979 */
+  background-color: @base-rgb; 
   /* opacity: 0.9; */
   /* animation: slideIn 0.5s ease-in-out both; */
 }
@@ -74,7 +76,7 @@ window {
   }
 
   100% {
-     opacity: 0.9;
+     opacity: 1.0;
   }
 }
 
@@ -119,7 +121,8 @@ window {
   margin: 5px 20px;
   padding: 10px;
   border: none;
-  border-radius: 0.1em;
+  /* border-radius: 0.1em; */
+  border-radius: 9px;
   color: @text;
   background-color: @base;
   animation: fadeIn 0.5s ease-in-out both;
@@ -154,6 +157,7 @@ window {
 /* Selected Entry */
 #entry:selected {
   border: 0.11em solid @lavender;
+  border-radius: 4px;
 }
 
 #entry:selected #text {
