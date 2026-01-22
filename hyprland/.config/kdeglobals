@@ -161,9 +161,6 @@ View Style=DetailTree
 ScaleFactor=1.25
 ScreenScaleFactors=eDP-1=1.25;HDMI-1=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;DP-4=1.25;DP-5=1.25;DP-6=1.25;DP-7=1.25;
 
-[UiSettings]
-ColorScheme=*
-
 [WM]
 activeBackground=39,44,49
 activeBlend=252,252,252
