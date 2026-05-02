@@ -1,6 +1,13 @@
+[ExtractDialog]
+2 screens: Window-Maximized=true
+DirHistory[$e]=$HOME/Dev/Work/
+
 [General]
 Version=202
 ViewPropsTimestamp=2025,11,25,23,28,37.164
+
+[IconsMode]
+PreviewSize=48
 
 [KFileDialog Settings]
 Places Icons Auto-resize=false
@@ -8,3 +15,6 @@ Places Icons Static Size=22
 
 [MainWindow]
 MenuBar=Disabled
+
+[UiSettings]
+ColorScheme=openSUSEdark
