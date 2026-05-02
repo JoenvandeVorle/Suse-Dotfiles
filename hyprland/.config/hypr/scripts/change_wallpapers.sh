@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-WALLPAPER_DIRECTORY=$HOME/.local/share/wallpapers/
+# WALLPAPER_DIRECTORY=$HOME/.local/share/wallpapers/
 
-WALLPAPER=$(find "$WALLPAPER_DIRECTORY" -type f | shuf -n 1)
+# WALLPAPER=$(find "$WALLPAPER_DIRECTORY" -type f | shuf -n 1)
 
-echo "Setting wallpaper to: $WALLPAPER"
+# echo "Setting wallpaper to: $WALLPAPER"
 
-hyprctl hyprpaper preload "$WALLPAPER"
-hyprctl hyprpaper wallpaper ",$WALLPAPER"
+# currently, this command seems to not work
+# hyprctl hyprpaper wallpaper "eDP-1, $WALLPAPER, cover"
 
-sleep 1
-
-hyprctl hyprpaper unload unused
+# sleep 1
