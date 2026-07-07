@@ -70,6 +70,22 @@ window#waybar {
 
 #clock {
   margin: 0px 8px;
+  /* margin-left: 8px; */
+}
+
+#custom-tomat {
+  border-radius: 9px;
+  padding: 0px 8px;
+}
+
+#custom-tomat.work {
+  color: @background;
+  background-color: @foreground;
+}
+
+#custom-tomat.work-paused {
+  /* color: @maroon; */
+  background-color: @background;
 }
 
 #custom-launcher,
@@ -79,6 +95,7 @@ window#waybar {
 #window,
 #pulseaudio,
 #bluetooth,
+#custom-tomat,
 #custom-lock,
 #custom-power {
   background-color: @background;
@@ -91,6 +108,8 @@ window#waybar {
   border-radius: 9px;
   padding: 0px 5px;
   margin-right: 8px;
+  /* icon-size: 5px; */
+  /* font-size: 16; */
 }
 
 #tray {
@@ -125,25 +144,31 @@ tooltip {
 
 #bluetooth{
   color: @blue;
+  font-size: 18;
 }
 
 #pulseaudio{
   color: @green;
+  font-size: 20;
 }
 
 #backlight{
   color: @yellow;
+  font-size: 18;
 }
 
 #battery {
   color: @maroon;
+  font-size: 16;
 }
 
 #custom-lock {
   color: @text;
+  font-size: 14;
 }
 
 #custom-power {
   border-radius: 0px 1rem 1rem 0px;
   color: @red;
+  font-size: 16;
 }

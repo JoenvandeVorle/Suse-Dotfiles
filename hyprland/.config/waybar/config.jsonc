@@ -17,6 +17,7 @@
     "clock"
   ],
   "modules-right": [
+    "custom/tomat",
     "group/hardware",
     "tray",
     "group/settings"
@@ -102,6 +103,15 @@
             "days": "<span color='#555869'><b>{}</b></span>"
         }
     }
+  },
+  "custom/tomat": {
+    "exec": "tomat status",
+    "interval": 1,
+    "return-type": "json",
+    "format": "{text}",
+    "tooltip": true,
+    "on-click": "tomat toggle",
+    "on-click-right": "tomat skip"
   },
   "mpris": {
     "format": "{player_icon} {dynamic}",

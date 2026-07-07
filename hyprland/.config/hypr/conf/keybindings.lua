@@ -7,18 +7,19 @@
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 
 -- Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
-hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("$terminal"))
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + W", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exit())
 hl.bind(mainMod .. " + T", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("XDG_CURRENT_DESKTOP=kde $fileManager"))
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("$menu"))
-hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("$browser"))
-hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("$editor"))
+-- hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("XDG_CURRENT_DESKTOP=kde" .. fileManager))
+hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(menu))
+hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + D", hl.dsp.exec_cmd("flatpak run dev.vencord.Vesktop"))
-hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd("$editor2"))
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(editor2))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -85,12 +86,12 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true 
 hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 -- bind = $mainMod, Print, exec, grim
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("cliphist list | wofi --dmenu | cliphist decode | wl-copy"))
-hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd("$colorpicker –-autocopy"))
-hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd("$powermenu"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("$lockscreen"))
+hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(colorpicker .. "–-autocopy"))
+hl.bind("CTRL + ALT + Delete", hl.dsp.exec_cmd(powermenu))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lockscreen))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("killall -SIGUSR1 waybar"))
-hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("killall waybar && hyprctl dispatch -- exec $taskbar"))
+hl.bind(mainMod .. " + SHIFT + N", hl.dsp.exec_cmd("killall waybar && waybar & disown"))
 
 hl.bind(mainMod .. " + SHIFT + G", hl.dsp.exec_cmd("~/.config/hypr/scripts/gamemode.sh"))
 

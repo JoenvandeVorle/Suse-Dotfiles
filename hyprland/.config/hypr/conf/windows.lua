@@ -40,41 +40,46 @@ hl.window_rule({
     name = "windowrule-3",
     match = {
         class = "pavucontrol",
-    },
-    float = true,
-})
-
-hl.window_rule({
-    name = "windowrule-4",
-    match = {
         class = "pavucontrol-qt",
-    },
-    float = true,
-})
-
-hl.window_rule({
-    name = "windowrule-5",
-    match = {
-        class = "blueman-manager",
-    },
-    float = true,
-})
-
-hl.window_rule({
-    name = "windowrule-6",
-    match = {
-        class = "nm-connection-editor",
-    },
-    float = true,
-})
-
-hl.window_rule({
-    name = "windowrule-7",
-    match = {
         class = "open-folder",
+        class = "blueman-manager",
+        class = "nm-connection-editor",
+        class = "nordvpn-gui",
     },
     float = true,
 })
+
+-- hl.window_rule({
+--     name = "windowrule-4",
+--     match = {
+--         class = "pavucontrol-qt",
+--     },
+--     float = true,
+-- })
+
+-- hl.window_rule({
+--     name = "windowrule-5",
+--     match = {
+--         class = "blueman-manager",
+--     },
+--     float = true,
+-- })
+
+-- hl.window_rule({
+--     name = "windowrule-6",
+--     match = {
+--         class = "nm-connection-editor",
+--     },
+--     float = true,
+-- })
+
+-- hl.window_rule({
+--     name = "windowrule-7",
+--     match = {
+--         class = "open-folder",
+--     },
+--     float = true,
+-- })
 
 -- Browser Picture in Picture
 hl.window_rule({

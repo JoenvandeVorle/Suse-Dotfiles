@@ -1,6 +1,7 @@
 [ExtractDialog]
 2 screens: Window-Maximized=true
-DirHistory[$e]=$HOME/Dev/Work/
+2160x1215 screen: Window-Maximized=true
+DirHistory[$e]=$HOME/Downloads/HomeASss/,$HOME/Downloads/,$HOME/Dev/Work/
 
 [General]
 Version=202

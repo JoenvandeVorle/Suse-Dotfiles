@@ -17,7 +17,7 @@ hl.animation({
 hl.config({
     general = {
         gaps_in = 3,
-        gaps_out = { top4, left7, right7, bottom7 },
+        gaps_out = { top=4, left=7, right=7, bottom=7 },
         border_size = 2,
         -- https://wiki.hypr.land/Configuring/Variables/#variable-types for info about colors
         -- col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
